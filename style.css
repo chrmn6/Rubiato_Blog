@@ -1,0 +1,259 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fff;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.container {
+    max-width: 900px;
+    margin: 5px auto;
+    padding: 5px;
+    color: #333;
+}
+
+.container h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #1f2937;
+    border-bottom: 3px solid #91a7d0;
+    display: inline-block;
+}
+
+.container>a {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #91a7d0;
+    font-weight: 500;
+    color: #f9f8f6;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+}
+
+.container>a:hover {
+    background: #1f2937;
+}
+
+.post {
+    background: #fff;
+    border-radius: 3px;
+    padding: 30px;
+    margin-top: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.post-image img {
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+}
+
+.post-header h3 {
+    font-size: 1.5rem;
+    color: #1f2937;
+    margin: 0 0 4px 0;
+}
+
+.post-header h4 {
+    font-size: 0.7rem;
+    color: #f9f8f6;
+    font-weight: 600;
+    background-color: #91a7d0;
+    padding: 4px 6px;
+    border-radius: 8px;
+    display: inline-block;
+    margin: 0 0 4px 0;
+}
+
+.post-header p {
+    color: #1f2937;
+    text-align: justify;
+    margin-top: 10px;
+}
+
+.post-header {
+    flex: 1;
+}
+
+.post-actions a {
+    color: #1f2937;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-left: 8px;
+    font-weight: 500;
+    transition: color 0.2s ease-in-out;
+}
+
+.post-actions a:hover {
+    color: #91a7d0;
+    text-decoration: underline;
+}
+
+.post-actions a[href*="delete"] {
+    color: #e53935;
+    font-weight: 500;
+}
+
+.post-actions a[href*="delete"]:hover {
+    color: #b71c1c;
+}
+
+/* Create Post Form Styling */
+
+.create-container {
+    max-width: 800px;
+    margin: 5px auto;
+    padding: 5px;
+    color: #333;
+}
+
+.create-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #1f2937;
+    border-bottom: 3px solid #91a7d0;
+    display: inline-block;
+}
+
+.create-container form {
+    background: #fff;
+    border-radius: 6px;
+    padding: 30px;
+    margin-top: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.create-container form label {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #1f2937;
+}
+
+.create-container form input[type="text"],
+.create-container form input[type="file"],
+.create-container form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    width: 95%;
+}
+
+.create-container form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.create-container form input[type="submit"] {
+    padding: 12px;
+    background-color: #91a7d0;
+    color: #f9f8f6;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.create-container form input[type="submit"]:hover {
+    background-color: #1f2937;
+}
+
+.create-container>a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background: #91a7d0;
+    color: #f9f8f6;
+    font-weight: 500;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+}
+
+.create-container>a:hover {
+    background: #1f2937;
+}
+
+/* Edit Post Form Styling */
+
+.edit-container {
+    max-width: 800px;
+    margin: 5px auto;
+    padding: 5px;
+    color: #333;
+}
+
+.edit-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #1f2937;
+    border-bottom: 3px solid #91a7d0;
+    display: inline-block;
+}
+
+.edit-container form {
+    background: #fff;
+    border-radius: 6px;
+    padding: 30px;
+    margin-top: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.edit-container form label {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #1f2937;
+}
+
+.edit-container form input[type="text"],
+.edit-container form input[type="file"],
+.edit-container form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    width: 95%;
+}
+
+.edit-container form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.edit-container form input[type="submit"] {
+    padding: 12px;
+    background-color: #91a7d0;
+    color: #f9f8f6;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.edit-container form input[type="submit"]:hover {
+    background-color: #1f2937;
+}
+
+.edit-container>a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background: #91a7d0;
+    color: #f9f8f6;
+    font-weight: 500;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+}
+
+.edit-container>a:hover {
+    background: #1f2937;
+}
